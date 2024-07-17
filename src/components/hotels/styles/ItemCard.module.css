@@ -1,0 +1,140 @@
+/* ItemCard.module.css */
+
+.itemContainer {
+  display: grid;
+  gap: 20px;
+  width: 100%;
+}
+
+.itemCard {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.itemCard:hover {
+  transform: scale(1.01);
+}
+
+.itemImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.itemDetails {
+  padding: 15px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.itemName {
+  font-size: 1.2em;
+  margin: 0 0 5px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.itemState {
+  font-size: 0.9em;
+  color: #777;
+  margin: 0 0 5px 0;
+}
+
+.itemDescription {
+  font-size: 0.9em;
+  color: #555;
+  margin: 0 0 15px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  flex-grow: 1;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.topButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.editButton,
+.viewButton,
+.removeButton {
+  padding: 8px 15px;
+  font-size: 0.9em;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.editButton, .viewButton {
+  background-color: #00c6f3;
+}
+
+.editButton:hover, .viewButton:hover {
+  background-color: #00afd6;
+}
+
+.removeButton {
+  background-color: #dc3545;
+  width: 100%;
+}
+
+.removeButton:hover {
+  background-color: #c82333;
+}
+
+.status {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: white;
+}
+
+.active { background-color: green; }
+.inReview { background-color: orange; }
+.rejected { background-color: red; }
+.pending { background-color: grey; }
+
+@media (min-width: 1391px) {
+  .buttonContainer {
+    flex-direction: row;
+  }
+
+  .topButtons {
+    flex-grow: 2;
+  }
+
+  .removeButton {
+    width: auto;
+    flex-grow: 1;
+  }
+}

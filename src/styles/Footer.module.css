@@ -1,0 +1,90 @@
+/* Footer.module.css */
+
+.footerWrapper {
+  background-color: #00c6f3; /* Blue background */
+  padding: 10px 0; 
+}
+
+.footer {
+  background-color: #111;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 40px;
+  align-items: center;
+  color: white;
+}
+
+.footerSections {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.contactSection,
+.logoSection,
+.subscriptionSection {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.contactSection {
+  text-align: center;
+}
+
+.socialIcons {
+  margin-top: 10px;
+}
+
+.socialIcons > a {
+  margin: 0 10px;
+}
+
+.logo {
+  width: 150px; /* Adjust as needed */
+  height: 150px;
+  margin: 0 auto;
+  display: block;
+}
+
+.logoSection {
+  text-align: center;
+}
+
+.subscriptionSection {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  margin-top: 10px;
+}
+
+.emailInput {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  border-radius: 15px 0 0 15px;
+}
+
+.submitButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0 15px 15px 0;
+  background-color: #00c6f3;
+  color: white;
+  cursor: pointer;
+}
+
+.footerBottom {
+  margin-top: 40px;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+

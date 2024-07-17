@@ -1,0 +1,217 @@
+.availabilityOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensures the overlay is on top of other elements */
+  }
+  
+  .availabilityPopup {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 450px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.3s ease-out; /* Add a slide-in animation */
+  }
+  
+  .statusToggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  .sectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f5f5f5;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .sectionHeader:hover {
+    background: #e0e0e0;
+  }
+  
+  .sectionContent {
+    margin-top: 10px;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 4px;
+    max-height: 300px; /* Limit the height */
+    overflow-y: auto; /* Add scrollbar if content exceeds max height */
+  }
+  
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+    padding: 5px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .item:last-child {
+    border-bottom: none;
+  }
+  
+  .closeButton {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .closeButton:hover {
+    background: #ff1a1a;
+  }
+  
+  .reactToggle {
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    background-color: #4CAF50; /* Green color */
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .reactToggle::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 19px;
+    height: 19px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+  }
+  
+  .reactToggle.checked {
+    background-color: #4CAF50; /* Adjust as needed */
+  }
+  
+  .reactToggle.checked::after {
+    transform: translateX(25px);
+  }
+  
+  .reactToggle.disabled {
+    background-color: #d3d3d3; /* Gray color */
+    cursor: not-allowed;
+  }
+  
+  .reactToggle.disabled::after {
+    background-color: #b0b0b0;
+  }
+  
+  .bookingForm {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    background: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .bookingForm label {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .bookingForm input[type="date"] {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .bookingForm button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-top: 10px;
+    transition: background 0.3s;
+  }
+  
+  .bookingForm button:hover {
+    background: #45a049;
+  }
+  
+  .bookingForm button:last-child {
+    background: #d9534f;
+  }
+  
+  .bookingForm button:last-child:hover {
+    background: #c9302c;
+  }
+  
+  .item ul {
+    list-style: none;
+    padding-left: 20px;
+  }
+  
+  .item ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .item ul li button {
+    background: #d9534f;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background 0.3s;
+  }
+  
+  .item ul li button:hover {
+    background: #c9302c;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-20%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

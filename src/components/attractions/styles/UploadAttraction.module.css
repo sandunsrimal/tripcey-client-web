@@ -1,0 +1,98 @@
+/* styles/UploadAttraction.module.css */
+
+.uploadHotel {
+    width: 100%;
+    margin-left: 0px;
+    padding: 20px;
+   
+  }
+
+  @media (min-width: 1025px) {
+    .uploadHotel {
+        margin-left: 280px; /* Sidebar width */
+    }
+    .navigation {
+        display: flex;
+      }
+      .navigation p {
+        margin-right: 10px;
+        font-size: 16px;
+        color: #424242; /* Dark blue color */
+      }
+    
+      .navigation h4 {
+        color: #00c6f3; /* Dark blue color */
+        font-size: 16px;
+      }
+}
+
+@media (max-width: 1024px) {
+    .uploadHotel {
+        margin-left: 0; /* Adjust as needed for smaller screens */
+        margin-top: 50px;
+    }
+    .navigation {
+        display: flex;
+      }
+      .navigation p {
+        margin-right: 10px;
+        font-size: 16px;
+        color: #424242; /* Dark blue color */
+      }
+    
+      .navigation h4 {
+        color: #00c6f3; /* Dark blue color */
+        font-size: 16px;
+      }
+}
+
+@media (max-width: 768px) {
+    .uploadHotel {
+        margin-left: 0; /* Adjust for mobile screens */
+    }
+
+    .hotelList {
+        padding: 15px;
+        margin-left: 0;
+    }
+    .navigation {
+        display: none; /* Hide navigation on smaller screens */
+    }
+    
+
+  
+}
+
+  /* .navigation {
+    display: flex;
+  } */
+  .navigation p {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #424242; /* Dark blue color */
+  }
+
+  .navigation h4 {
+    color: #00c6f3; /* Dark blue color */
+    font-size: 16px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 25px;
+    margin: 0;
+    color: #111; /* Dark blue color */
+  }
+  
+
+
+
+  

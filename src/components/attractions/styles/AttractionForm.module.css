@@ -1,0 +1,314 @@
+.hotelForm {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 20px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hotelformGroup {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .leftSide, .rightSide {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formGroup {
+    margin-bottom: 20px;
+  }
+  
+  .label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  
+  .input,
+  .textarea,
+  .select,
+  .fileInput,
+  .input[readonly] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+  }
+
+  .selectstate {
+    font-size: 14px;
+    box-sizing: border-box;
+    margin-top: 10px;
+  }
+  
+  .textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  .radioGroup {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .radio {
+    margin-right: 5px;
+    margin-left: 15px;
+  }
+  
+
+  .uploadIcon{
+    width: 80px;
+    height: 80px;
+    color: #424242;
+  }
+
+  .uploadtxt {
+    font-size: small;
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+  }
+  
+  .required {
+    color: red;
+  }
+  
+  .imageUploadWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+;
+  }
+  
+  .imageUploadPlaceholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+    height: 250px;
+    box-sizing: border-box;
+  }
+  
+  .imageUploadIcon {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .imagePreviewWrapper {
+    position: relative;
+    display: inline-block;
+  }
+  .primaryImagePreview {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    flex-direction: column;
+    align-items: center;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+    box-sizing: border-box;
+  }
+
+  .imagePreview {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px 0;
+  }
+  
+  .clearButton {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 25px;
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0.634);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .imagePreviewContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .mapPicker {
+    margin-top: 10px;
+  }
+  
+  .button {
+    background-color: #00c6f3;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 15px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+
+  .nextbtn {
+    background-color: #00c6f3;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 15px;
+    font-weight: bold;
+    width: 100%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+
+  }
+  
+  .button:hover {
+    background-color: #01a0c4;
+  }
+
+  .button.loading {
+    background-color: #01a0c4;
+    cursor: not-allowed;
+    height: 40px;
+    color: #fff;
+  }
+  
+  .loadingDots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .loadingDots span {
+    width: 8px;
+    height: 8px;
+    margin: 0 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: loadingDots 1s infinite;
+  }
+  
+  .loadingDots span:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .loadingDots span:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .loadingDots span:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes loadingDots {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hotelformGroup {
+      flex-direction: column;
+    }
+  
+    .leftSide, .rightSide {
+      width: 100%;
+    }
+  }
+  
+  .mapLabel {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  
+  .autocompleteDropdownContainer {
+    /* position: absolute; */
+    position: relative;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    max-height: 200px;
+    width: 100%;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+
+  
+  
+  .suggestionItem {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .suggestionItem:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .mapContainer {
+    height: 300px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  
+  /* .mapAddress {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+  } */
+  

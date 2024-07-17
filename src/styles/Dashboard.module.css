@@ -1,0 +1,55 @@
+/* styles/Dashboard.module.css */
+
+.dashboardPage {
+    display: flex;
+  }
+
+.dashboard {
+    width: 100%;
+    margin-left: 280px;
+    padding: 20px;
+   
+
+  }
+  
+  .userInfo {
+    margin-top: 20px;
+  }
+  
+  .userDetails {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profileImage {
+    border-radius: 50%;
+  }
+  
+  .userText {
+    margin-left: 10px;
+  }
+  
+  .signOutButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .signOutButton:hover {
+    background-color: #0056b3;
+  }
+  
+
+@media (max-width: 768px) {
+    .dashboard {
+        width: 100%;
+        padding: 20px;
+       
+    
+      }
+}

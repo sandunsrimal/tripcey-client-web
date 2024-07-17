@@ -1,0 +1,90 @@
+/* styles/RoomsAndFacilitiesForm.module.css */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 20px;
+  }
+  
+  .section {
+    margin-bottom: 1rem;
+    background-color: #f5f7fa;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .addButton {
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .content {
+    margin-top: 1rem;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  
+ 
+  .mainButton {
+    background-color: #00c6f3;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    height: 40px;
+    font-size: 16px;
+    width: 49%;
+    border-radius: 15px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+
+  }
+
+  .nextButton {
+    background-color: #00c6f3;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 15px;
+    font-weight: bold;
+    width: 100%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  
+    
+
+  }
+  
+ .nextButton:hover {
+    background-color: #01a0c4;
+  }
+  
+  .next {
+    padding-left: 10px;
+    padding-right: 10px;
+  }

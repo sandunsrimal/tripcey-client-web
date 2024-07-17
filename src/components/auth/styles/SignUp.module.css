@@ -1,0 +1,171 @@
+.container {
+  display: flex;
+  height: 100vh;
+  background: #00c6f3;
+  padding-top: 40px;
+}
+
+.infoSection {
+  flex: 1;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.infoSection h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.infoSection p {
+  font-size: 16px;
+  text-align: center;
+  max-width: 600px;
+}
+
+.nameWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.signupSection {
+  flex: 1;
+  max-width: 400px;
+  margin:  auto;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-right: 70px;
+}
+
+.title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.passwordWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.togglePasswordButton {
+  position: absolute;
+  top: 45%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #00c6f3;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.signupButton {
+  width: 100%;
+  padding: 14px;
+  background-color: #00c6f3;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingDots span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  animation: loading 1s infinite;
+}
+
+@keyframes loading {
+  0%, 80%, 100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+
+.loginLink {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.orDivider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  text-align: center;
+  position: relative;
+}
+
+.orDivider::before,
+.orDivider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+}
+
+.orDivider::before {
+  margin-right: .25em;
+}
+
+.orDivider::after {
+  margin-left: .25em;
+}
+
+.socialButton {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+
+
+.socialLogo {
+  margin-right: 10px;
+}

@@ -1,0 +1,586 @@
+.paymentFormContainer {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 20px;
+  }
+
+  .paymentFormGroup {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  
+
+  .headerSection,
+  .paymentMethodSection {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .header p {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0 0;
+  }
+  
+  .plans {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+  }
+  
+  .plan {
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    padding: 20px;
+    width: 48%;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+
+  }
+  
+  .plan.selected {
+    background-color: #00c6f3;
+    color: #ffffff;
+  }
+  
+  .plan h2 {
+    font-size: 18px;
+    margin: 0 0 10px;
+  }
+  
+  .price {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .price span {
+    font-size: 14px;
+    font-weight: normal;
+  }
+  
+  .selectButton {
+    background-color: transparent;
+    border: 2px solid #00c6f3;
+    border-radius: 15px;
+    color: #00c6f3;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    
+  }
+  
+  .plan.selected .selectButton {
+    background-color: #ffffff;
+    color: #00c6f3;
+  }
+  
+  .summary {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .summaryItem {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .totalLabel {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .totalValue {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+
+  
+  .sectionTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .paymentMethods {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 10px;
+    
+  }
+  
+  .paymentMethod {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 10px;
+    width: 50%;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    
+
+  }
+  
+  .paymentMethod.selected {
+    border-color: #00c6f3;
+    background-color: #e6f7ff;
+  }
+  
+  .paymentMethod input {
+    margin-right: 10px;
+  }
+  
+  .paymentMethod label {
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .transactionSection {
+    margin-bottom: 20px;
+  }
+  
+  .transactionSection label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #495057;
+  }
+  
+  .transactionSection input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+
+
+  .proceedButton {
+    background-color: #00c6f3;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    height: 40px;
+    font-size: 16px;
+    width: 49%;
+    border-radius: 15px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+
+  
+  
+  .proceedButton:hover {
+    background-color: #01a0c4;
+  }
+
+  .button.loading {
+    background-color: #01a0c4;
+    cursor: not-allowed;
+    height: 40px;
+    color: #fff;
+  }
+
+        
+  
+  .loadingDots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .loadingDots span {
+    width: 8px;
+    height: 8px;
+    margin: 0 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: loadingDots 1s infinite;
+  }
+  
+  .loadingDots span:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .loadingDots span:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .loadingDots span:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes loadingDots {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .proceedButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .required {
+    color: red;
+  }
+  
+  .imageUploadWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px
+;
+  }
+  
+  .imageUploadPlaceholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    height: 250px;
+    box-sizing: border-box;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+    color: #495057;
+  }
+  
+ 
+  .uploadIcon{
+    width: 80px;
+    height: 80px;
+    color: #424242;
+  }
+  .imagePreviewWrapper {
+    position: relative;
+    display: inline-block;
+  }
+  .uploadedFilePreview {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    flex-direction: column;
+    align-items: center;
+    border: 2px dashed #ccc;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+    box-sizing: border-box;
+  }
+
+
+
+.uploadedFilePreview,
+.react-pdf__Page {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+ 
+  .uploadLabel {
+    cursor: pointer;
+  }
+
+  .couponSection {
+    margin-top: 20px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .couponInputContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .couponInput {
+    width: 200px; /* Adjust width as needed */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px 0 0 10px;
+  }
+  
+  .applyCouponButton {
+    background-color: #00c6f3; /* Example background color */
+    color: white;
+    border: none;
+    padding: 9px 12px;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+  }
+  
+  .applyCouponButton:hover {
+    background-color: #01a0c4; /* Example hover color */
+  }
+  
+  
+  /* Add these media queries at the end of the file */
+
+@media screen and (max-width: 1024px) {
+    /* Tablet styles */
+    .paymentFormGroup {
+      flex-direction: column;
+    }
+  
+    .headerSection,
+    .paymentMethodSection {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  
+    .plan {
+      padding: 15px;
+    }
+  
+    .plan h2 {
+      font-size: 16px;
+    }
+  
+    .price {
+      font-size: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* Mobile styles */
+    .paymentFormContainer {
+      padding: 15px;
+    }
+  
+    .header h1 {
+      font-size: 20px;
+    }
+  
+    .header p {
+      font-size: 12px;
+    }
+  
+    .plans {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .plan {
+      width: 100%;
+    }
+  
+    .summaryItem {
+      font-size: 14px;
+    }
+  
+    .sectionTitle {
+      font-size: 18px;
+    }
+  
+    .paymentMethods {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .paymentMethod {
+      width: 100%;
+    }
+  
+    .proceedButton {
+      width: 100%;
+    }
+  
+    .imageUploadPlaceholder,
+    .uploadedFilePreview {
+      height: 200px;
+    }
+  }
+
+
+  
+  .creditCardForm .formGroup {
+    margin-bottom: 20px;
+    
+  }
+  
+  .creditCardForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #495057;
+  }
+
+  .disabledForm {
+    opacity: 0.5;
+    pointer-events: none; /* Prevents interaction with the form */
+  }
+  
+  .creditCardForm input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+
+  }
+  
+  .creditCardForm input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+    box-sizing: border-box;
+
+  }
+  
+  .creditCardForm .cardNumberGroup {
+    position: relative;
+  }
+  
+  .creditCardForm .cardNumberGroup::after {
+    content: '\f09d'; /* Credit card icon */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #6c757d;
+  }
+  
+  .creditCardForm .expiryDateCvvGroup {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .creditCardForm .expiryDateGroup,
+  .creditCardForm .cvvGroup {
+    width: 48%;
+  }
+  
+  .creditCardForm .required {
+    color: #dc3545;
+    margin-left: 3px;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .creditCardForm .expiryDateCvvGroup {
+      flex-direction: column;
+    }
+  
+    .creditCardForm .expiryDateGroup,
+    .creditCardForm .cvvGroup {
+      width: 100%;
+    }
+  }
+
+  .statusMessage {
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  
+  .nextButton {
+    background-color: #00c6f3;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 15px;
+    font-weight: bold;
+    width: 100%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+
+  }
+  
+ .nextButton:hover {
+    background-color: #01a0c4;
+  }
+
+
+  .buttonGroup {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .backButton {
+    background-color: #00c6f3;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 15px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 49%;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+
+  .backButton:hover {
+    background-color: #01a0c4;
+  }

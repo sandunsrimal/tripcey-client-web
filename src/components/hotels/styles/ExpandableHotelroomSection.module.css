@@ -1,0 +1,504 @@
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.5rem;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  .section {
+    margin-bottom: 1rem;
+    background-color: #ecececdb;
+    padding: 0.8rem 1.5rem;
+    border-radius: 15px;
+  }
+  .addRoomButton {
+    background-color: #00c6f3;
+    color: #fff;
+    width: 50%;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px 0px 10px 0px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .addButton {
+    background-color: #00c6f3;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px 0px 10px 0px;
+  }
+  .addMainButton {
+    background-color: #00c6f3;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    padding: 10px 20px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 15px;
+    font-weight: bold;
+    color: #111;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .content {
+    margin-top: 1rem;
+  }
+  
+  .sidegroup {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+  .leftside {
+    width: 50%;
+  }
+    .rightside {
+        width: 50%;
+    }
+
+    .checkintimer,
+    .checkouttimer {
+        padding: 9px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        font-size: 14px;
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 10px;
+        transition: border-color 0.3s;
+    }
+    .checkin {
+        justify-content: space-between;
+        gap: 1rem;
+        width: 50%;
+    }
+    .checkout {
+        justify-content: space-between;
+        gap: 1rem;
+        width: 50%;
+    }
+
+    .checkincheckout {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+  }
+  
+  .skipButton {
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .updateButton {
+    background-color: #00c6f3;
+    color: white;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 10PX;
+  }
+
+  .cancelButton {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    width: 60%;
+    display: inline-block;
+    padding: 10px 20px;
+    height: 40px;
+    font-size: 16px;
+    margin-left: 10px;
+    border-radius: 15px;
+    margin-top: 10px;
+  }
+  
+  .formGroup {
+    margin-bottom: 1rem;
+  }
+  .formGroup label {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .inputField,
+  .fileInput,
+  .textAreaField {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+  }
+  
+  .textAreaField {
+    height: 100px;
+  }
+
+
+  
+  .imageUpload {
+    border: 2px dashed #ccc;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #666;
+  }
+  
+  .facilities {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 0.5rem;
+  }
+  
+  .facilities label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.1rem;
+    font-size: medium;
+    font-weight: normal;
+  }
+  
+  .facilities input {
+    margin-right: 0.5rem;
+  }
+  
+  .room {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+  }
+  
+  .room input[type="text"] {
+    margin-bottom: 0.5rem;
+  }
+  
+  .room label {
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+    margin-bottom: 0.1rem;
+    font-size: small;
+  }
+  
+  .room label input {
+    margin-right: 0.5rem;
+  }
+
+  .roomlabel label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.1rem;
+    font-size:  0.9rem;
+    font-weight: normal;
+    
+  }
+
+  .roompersonlabel {
+    justify-content: space-around;
+    margin-bottom: 0.1rem;
+    font-size: small;
+    font-weight: normal;
+    
+    width: 50%;
+  }
+
+  .roomlabel {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0.1rem;
+    font-size: small;
+    font-weight: normal;
+    width: 50%;
+  }
+  
+  .room .removeButton {
+    margin-top: 1rem;
+  }
+
+  .roomfooter {
+    display: flex;
+    justify-content: flex-end;
+}
+  
+  .removeButton {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .roombeds {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 0.1rem;
+    gap: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .roombeds label {
+   
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+
+  .roomsinglebed {
+    width: 50%;
+  }
+  .roomdoublebed {
+    width: 50%;
+
+  }
+
+  .roompersons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 0.1rem;
+    font-size: small;
+    font-weight: normal;
+    gap: 1rem;
+  }
+  
+  .editButton {
+    background-color: #ffa500;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+
+  .deleteButton {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  
+  .apartmentList {
+    margin: 0 auto;
+
+  }
+  
+  .apartmentItem {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .apartmentImage {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    object-fit: cover;
+    margin-right: 5px;
+    border-radius: 10px;
+  }
+  
+  
+  .apartmentTable,
+  .roomTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+  }
+  
+  .apartmentTable th,
+  .apartmentTable td,
+  .roomTable th,
+  .roomTable td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+   
+  }
+  
+  .roomTable th {
+    background-color: #f4f4f4;
+  }
+  
+  .roomTable td {
+    vertical-align: top;
+    padding: 10px;
+  }
+
+  .uploadIcon{
+    width: 80px;
+    height: 80px;
+    color: #424242;
+  }
+
+  .uploadtxt {
+    font-size: small;
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+  }
+  
+  .required {
+    color: red;
+  }
+
+  .imageUploadWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+;
+  }
+  
+  .imageUploadPlaceholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+  }
+  
+  .imageUploadIcon {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .imagePreviewWrapper {
+    position: relative;
+    display: inline-block;
+  }
+
+
+  .imagePreview {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px 0;
+  }
+  
+  .clearButton {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 25px;
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0.634);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .imagePreviewContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .loadingDots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .loadingDots span {
+    width: 8px;
+    height: 8px;
+    margin: 0 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: loadingDots 1s infinite;
+  }
+  
+  .loadingDots span:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .loadingDots span:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .loadingDots span:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes loadingDots {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  
+  /* Add a media query to ensure responsiveness */
+  @media (max-width: 768px) {
+    .facilities {
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+  
+    .room {
+      padding: 0.5rem;
+    }
+  }
+  

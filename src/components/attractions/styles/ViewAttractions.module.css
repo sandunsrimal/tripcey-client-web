@@ -1,0 +1,158 @@
+/* ViewAttractions.module.css */
+
+.viewHotels {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 25px;
+    margin: 0;
+    color: #111;
+  }
+  
+  .navigation {
+    display: flex;
+  }
+  
+  .navigation p {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #424242;
+  }
+  
+  .navigation h4 {
+    color: #00c6f3;
+    font-size: 16px;
+  }
+  
+  .searchBar {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto 20px;
+    background: #f9f9f9;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+  }
+  
+  .searchIcon {
+    font-size: 24px;
+    color: #707070;
+    margin-left: 20px;
+  }
+  
+  .searchBar input {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 15px;
+    font-weight: 400;
+    border: none;
+    padding: 14px 20px;
+    background-color: transparent;
+  }
+  
+  .searchBar .button {
+    font-size: 14px;
+    font-weight: 600;
+    color: #111;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 15px;
+    background-color: #00c6f3;
+    cursor: pointer;
+    margin-right: 2px;
+    transition: transform 0.1s ease;
+  }
+  
+  .searchBar .button:active {
+    transform: scale(0.98);
+  }
+  
+  .hotelList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    padding: 25px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 20px;
+  }
+  
+  
+  .hotelCard {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .seeMoreContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .seeMoreButton {
+    background-color: #00c6f3;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .seeMoreButton:hover {
+    background-color: #00b0d8;
+  }
+  
+  @media (min-width: 1025px) {
+    .viewHotels {
+      margin-left: 280px;
+      width: calc(100% - 280px);
+    }
+  
+    .hotelList {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .viewHotels {
+      margin-left: 0;
+      width: 100%;
+    }
+  
+    .hotelList {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .viewHotels {
+      margin-left: 0;
+      margin-top: 50px;
+      width: 100%;
+    }
+  
+    .hotelList {
+      grid-template-columns: 1fr;
+      padding: 15px;
+    }
+  
+    .navigation {
+      display: none;
+    }
+  }

@@ -1,0 +1,90 @@
+/* styles/ProgressBar.module.css */
+.progressBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 80px;
+    margin-bottom: 20px;
+  }
+  
+  .stepContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 50%; /* Adjust based on the number of steps */
+  }
+  
+  .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: white;
+    z-index: 1;
+  }
+  
+  .label {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+  }
+  
+  .line {
+    height: 2px;
+    background-color: #ccc;
+    position: absolute;
+    top: 15px;
+    left: 100%;
+    width: 100%;
+    z-index: 0;
+    transform: translateX(-50%);
+  }
+  
+  .stepContainer:last-child .line {
+    display: none;
+  }
+  
+  .active .circle {
+    background-color: #111;
+  }
+  
+  .active .label {
+    color: #111;
+  }
+  
+  .active .line {
+    background-color: #111;
+  }
+  
+  @media (max-width: 480px) {
+    .progressBar {
+      justify-content: center;
+    }
+    
+    .stepContainer {
+      display: none;
+    }
+    
+    .stepContainer.active {
+      display: flex;
+    }
+    
+    .line {
+      display: none;
+    }
+    
+   
+  }
