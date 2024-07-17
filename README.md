@@ -1,3 +1,23 @@
+## Screenshots
+Here are some screenshots:
+
+### Login Screen
+![Login Screen](/signin.png)
+
+### Signup Screen
+![Signup Screen](/signup.png)
+
+### View Attractions Screen
+![View Attractions Screen](/view.png)
+
+
+### Upload Hotel Screen
+![Upload Hotel Screen](/upload.png)
+
+
+### Payment Screen
+![Payment Screen](/payment.png)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
